@@ -1,0 +1,19 @@
+.movie {
+    display: block;
+    max-width: 246px;
+    margin: 0.5rem;
+    border: 1px solid grey;
+    text-decoration: none;
+}
+
+.movie-poster {
+    max-width: 100%;
+}
+
+.movie-text {
+    color: grey;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+}

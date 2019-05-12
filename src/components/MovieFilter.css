@@ -1,0 +1,70 @@
+.Filter {
+    float: left;
+    width: 300px;
+    margin: 0 1% 0 0;
+    position: relative;
+    transition: .5s;
+}
+
+.Filter-selected {
+    border: 1px solid #eee;
+    padding: 4% 4% 4% 12%;
+    border-radius: 2px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Filter-selected img {
+    margin-left: 1rem;
+}
+
+.Filter-options {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 4% 0;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.Filter-options li {
+    display: block;
+    padding: 4% 12%;
+    transition: .5s;
+    cursor: pointer;
+    color: #666;
+    font-weight: 100;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.Filter-options li:hover {
+    color: #00c8ff;
+    background-color: black;
+    text-decoration: none;
+}
+
+.Filter-text {
+    font-size: 1rem;
+    color: grey;
+}
+
+.MovieFilter {
+    width: 100%;
+}
+
+@media only screen and (max-width: 904px) {
+    .Filter{
+        width: 100%;
+    }
+}

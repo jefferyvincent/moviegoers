@@ -1,0 +1,45 @@
+.movie-details-body {
+    display: flex;
+}
+
+.backBtn {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #00c8ff;
+}
+
+.movie-details-body img{
+    margin-right: 2rem;
+    max-width: 100%;
+}
+
+.user-scores {
+    display: flex;
+}
+
+.user-score {
+    font-size: small;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.rating {
+    padding: 1rem;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width: 904px) {
+    .movie-details-body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

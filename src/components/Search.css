@@ -1,0 +1,88 @@
+.App-search {
+    background-color: #3b3b3b;
+    border-radius: 3px;
+    float: left;
+    height: 54px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.App-search input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #dcdcdc;
+    font-size: 20px;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    padding: 0px 46px 15px 15px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    font-weight: 200;
+}
+
+.Search-mag {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.Search-results {
+    background-color: rgba(34,34,34,.97);
+    font-size: 16px;
+    height: auto;
+    max-height: 300px;
+    overflow-x: auto;
+    left: 0;
+    line-height: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 53px 20px 20px 25px;
+    position: absolute;
+    width: 100%;
+    top: 54px;
+}
+
+.Search-results li {
+    clear: both;
+    overflow: hidden;
+    margin: 0 0 4px;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.Search-results li a {
+    overflow: hidden;
+    display: block;
+    padding: 4px;
+    line-height: 31px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.Search-results li a img {
+    max-width: 100px;
+}
+
+.img-wrap {
+    float: left;
+    margin: 0 16px 0 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden
+}
+
+
+
+@media only screen and (max-width: 904px) {
+    .App-search {
+        height: 40px;
+    }
+}

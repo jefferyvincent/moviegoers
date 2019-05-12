@@ -1,0 +1,53 @@
+.pager {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 140px;
+    height: 59px;
+    cursor: pointer;
+    background-color: #00c8ff;
+    color: white;
+    line-height: 3rem;
+    position: relative;
+}
+
+.prev-btn {
+    margin-right: 1rem;
+}
+
+.prev-btn::after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #00c8ff;
+}
+
+.next-btn:after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #00c8ff;
+}
+
+.disabled {
+    display: none;
+}
+
+@media only screen and (max-width: 904px) {
+    .btn {
+        width: 100px;
+        margin: 1rem;
+    }
+}
