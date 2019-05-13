@@ -65,7 +65,7 @@ const MovieIndex: React.FC<MovieIndexProps> = ({match, history}) => {
       }
     }, [state.filter, pager]);
 
-    console.log(state);
+    //console.log(state);
 
     return (
       <Context.Provider value={dispatch}>
