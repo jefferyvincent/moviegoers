@@ -1,5 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import {render } from 'react-testing-library';
+
 import MovieFilter from '../MovieFilter';
 
 describe('<MovieFilter/>', () => {
@@ -19,8 +21,13 @@ describe('<MovieFilter/>', () => {
     }
   ];
 
-
   beforeEach(() => { wrapper = shallow(<MovieFilter history={[]} filters={filter_data} active_filter="now_playing"/>); });
+  
+  it("renders", () => {
+    const { asFragment } = render(<MovieFilter history={[]} filters={filter_data} active_filter="now_playing" />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('renders a filter', () => {
     expect(wrapper.find('div.movieFilter').length).toEqual(1);
   });

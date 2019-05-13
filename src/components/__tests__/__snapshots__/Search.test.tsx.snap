@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search/> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="app-search"
+  >
+    <input
+      autocomplete="off"
+      autocorrect="off"
+      placeholder="search it."
+      spellcheck="false"
+    />
+    <img
+      alt="Search"
+      class="search-mag"
+      src="mag.svg"
+    />
+  </div>
+</DocumentFragment>
+`;

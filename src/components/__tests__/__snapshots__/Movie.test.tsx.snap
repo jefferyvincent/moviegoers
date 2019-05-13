@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Movie/> renders 1`] = `
+<DocumentFragment>
+  <a
+    class="movie"
+    href="#/movie/1"
+    title="test"
+  >
+    <img
+      alt="test"
+      class="movie-poster"
+      src="https://image.tmdb.org/t/p/w500/test.png"
+    />
+    <div
+      class="movie-text"
+    >
+      test
+    </div>
+  </a>
+</DocumentFragment>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieFilter/> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="movieFilter"
+  >
+    <h3
+      class="filter-text"
+    >
+      Showing Movies sorted by Now Playing
+    </h3>
+    <div
+      class="filter"
+    >
+      <div
+        class="filter-selected"
+      >
+        Now Playing 
+        <img
+          alt="filter"
+          src="arrow.svg"
+        />
+      </div>
+      <ul
+        class="filter-options hidden"
+      >
+        <li>
+           Popular
+        </li>
+        <li>
+           Top Rated
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

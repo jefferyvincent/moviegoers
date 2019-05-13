@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieIndex/> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <header
+      class="app-header"
+    >
+      <div
+        class="header-left"
+      >
+        <a
+          href="#/"
+          title="Ultimate Moviegoers Guide"
+        >
+          <h1
+            class="header-logo"
+          >
+            <img
+              alt="Ultimate Moviegoers Guide"
+              src="logo.png"
+            />
+          </h1>
+        </a>
+      </div>
+      <div
+        class="header-right"
+      >
+        <div
+          class="app-search"
+        >
+          <input
+            autocomplete="off"
+            autocorrect="off"
+            placeholder="search it."
+            spellcheck="false"
+          />
+          <img
+            alt="Search"
+            class="search-mag"
+            src="mag.svg"
+          />
+        </div>
+      </div>
+    </header>
+    <main
+      class="content"
+    >
+      <h2>
+        Ultimate Movie Guide
+      </h2>
+      <div
+        class="movieFilter"
+      >
+        <h3
+          class="filter-text"
+        >
+          Showing Movies sorted by Now Playing
+        </h3>
+        <div
+          class="filter"
+        >
+          <div
+            class="filter-selected"
+          >
+            Now Playing 
+            <img
+              alt="filter"
+              src="arrow.svg"
+            />
+          </div>
+          <ul
+            class="filter-options hidden"
+          >
+            <li>
+               Popular
+            </li>
+            <li>
+               Top Rated
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul
+        class="grid"
+      >
+        <li>
+          <div
+            class="loader"
+          >
+            Loading...
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer
+      class="footer"
+    >
+      <hr />
+      <div
+        class="copyright"
+      >
+        © 2019 Ultimate Moviegoers Guide
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
