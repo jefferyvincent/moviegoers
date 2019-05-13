@@ -8,7 +8,7 @@ Ultimate Movie Guide built with React Hooks.
 
 
 # What is moviegoers?
-A ultimate movie guilde created using the lastest (2019) React.js hooks that uses the api.themoviedb for all ajax calls.
+A ultimate movie guilde created using the lastest (2019) React.js hooks that uses the api.themoviedb for all ajax calls. [See it Live! ](https://jefferyvincent.github.io/)
 
 ## Installation
 To run this project git clone it and run `npm install`. Next run `yarn start` or `npm run start`
