@@ -4,4 +4,9 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 1rem;
+    list-style: none;
+}
+
+.gid li {
+    list-style: none;
 }

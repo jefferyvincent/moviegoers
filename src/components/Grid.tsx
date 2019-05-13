@@ -11,16 +11,16 @@ const Grid: React.FC<GridProps> = ({movies}) => {
     const renderMovies = () => {
         if (movies.hasOwnProperty('results')) {
             return movies.results.map((item:any, key:number) => {
-                return <Movie key={key} id={item.id} img={item.poster_path} title={item.title}/>  
+                return <li><Movie key={key} id={item.id} img={item.poster_path} title={item.title}/></li>  
             });
         } else {
-            return <div className="loader">Loading...</div>
+            return <li><div className="loader">Loading...</div></li>
         }
     }
     return (
-        <div className="grid">
+        <ul className="grid">
             {renderMovies() }
-        </div>
+        </ul>
     )
 }
 

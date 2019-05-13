@@ -9,7 +9,7 @@ describe('<Grid/>', () => {
      
   beforeEach(() => { wrapper = shallow(<Grid movies={data}/>); });
   it('renders an grid', () => {
-    expect(wrapper.find('div.grid').length).toEqual(1);
+    expect(wrapper.find('ul.grid').length).toEqual(1);
   });
   it('renders an loader', () => {
     expect(wrapper.find('div.loader').length).toEqual(1);
