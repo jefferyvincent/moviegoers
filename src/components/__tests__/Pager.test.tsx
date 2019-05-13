@@ -6,7 +6,7 @@ import Pager from '../Pager';
 describe('<Pager/>', () => {
   let wrapper:any;
   beforeEach(() => { wrapper = shallow(<Pager page={1} max={10} history={[]} />); });
-  it('renders an pager', () => {
+  it('renders a pager', () => {
     expect(wrapper.find('div.pager').length).toEqual(1);
   });
 });
