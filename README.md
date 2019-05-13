@@ -1,11 +1,10 @@
-<h1 align="center"><img src="https://github.com/jefferyvincent/moviegoers/public/assets/moviegoers-readme-header.png" alt="MovieGoers" /></h1>
+<h1 align="center"><img src="https://github.com/jefferyvincent/moviegoers/tree/master/public/assets/moviegoers-readme-header.png" alt="MovieGoers" /></h1>
 
-# moviegoers
 Ultimate Movie Guide built with React Hooks.
 
 ## Sample Screenshots
-<img src="https://github.com/jefferyvincent/moviegoers/public/assets/screen_shot_1.png" alt="moviegoers" />
-<img src="https://github.com/jefferyvincent/moviegoers/public/assets/screen_shot_2.png" alt="moviegoers" />
+<img src="https://github.com/jefferyvincent/moviegoers/tree/master/public/assets/screen_shot_1.png" alt="moviegoers" />
+<img src="https://github.com/jefferyvincent/moviegoers/tree/master/public/assets/screen_shot_2.png" alt="moviegoers" />
 
 
 # What is moviegoers?
