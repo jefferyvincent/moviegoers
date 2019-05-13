@@ -1,4 +1,4 @@
-.App-search {
+.app-search {
     background-color: #3b3b3b;
     border-radius: 3px;
     float: left;
@@ -9,7 +9,7 @@
     z-index: 9999999;
 }
 
-.App-search input {
+.app-search input {
     outline: none;
     background-color: transparent;
     border: none;
@@ -25,13 +25,13 @@
     font-weight: 200;
 }
 
-.Search-mag {
+.search-mag {
     position: absolute;
     top: 7px;
     right: 10px;
 }
 
-.Search-results {
+.search-results {
     background-color: rgba(34,34,34,.97);
     font-size: 16px;
     height: auto;
@@ -47,7 +47,7 @@
     top: 54px;
 }
 
-.Search-results li {
+.search-results li {
     clear: both;
     overflow: hidden;
     margin: 0 0 4px;
@@ -56,7 +56,7 @@
     text-align: left;
 }
 
-.Search-results li a {
+.search-results li a {
     overflow: hidden;
     display: block;
     padding: 4px;
@@ -65,7 +65,7 @@
     color: white;
     text-decoration: none;
 }
-.Search-results li a img {
+.search-results li a img {
     max-width: 100px;
 }
 
@@ -82,7 +82,7 @@
 
 
 @media only screen and (max-width: 904px) {
-    .App-search {
+    .app-search {
         height: 40px;
     }
 }

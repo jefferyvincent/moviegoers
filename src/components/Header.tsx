@@ -7,15 +7,15 @@ import Search from './Search';
 
 const Header: React.FC = () => {
     return (
-        <header className="App-Header">
-            <div className="Header-left">
+        <header className="app-header">
+            <div className="header-left">
                 <Link to="/" title="Ultimate Moviegoers Guide">
-                    <h1 className="Header-logo">
+                    <h1 className="header-logo">
                         <img src={logo} alt="Ultimate Moviegoers Guide" />
                     </h1>
                 </Link>
             </div>
-            <div className="Header-right">
+            <div className="header-right">
                 <Search />
             </div>
         </header>

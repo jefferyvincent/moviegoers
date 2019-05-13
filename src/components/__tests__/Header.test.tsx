@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Header from './Header';
+import Header from '../Header';
 
 describe('<Header/>', () => {
   let wrapper:any;
   beforeEach(() => { wrapper = shallow(<Header />); });
   it('renders an header', () => {
-    expect(wrapper.find('header.App-Header').length).toEqual(1);
+    expect(wrapper.find('header.app-header').length).toEqual(1);
   });
 
   it('renders an h1', () => {

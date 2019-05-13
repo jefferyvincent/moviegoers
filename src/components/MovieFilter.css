@@ -1,4 +1,4 @@
-.Filter {
+.filter {
     float: left;
     width: 300px;
     margin: 0 1% 0 0;
@@ -6,7 +6,7 @@
     transition: .5s;
 }
 
-.Filter-selected {
+.filter-selected {
     border: 1px solid #eee;
     padding: 4% 4% 4% 12%;
     border-radius: 2px;
@@ -17,11 +17,11 @@
     transition: .5s;
 }
 
-.Filter-selected img {
+.filter-selected img {
     margin-left: 1rem;
 }
 
-.Filter-options {
+.filter-options {
     position: absolute;
     top: 46px;
     left: 0;
@@ -37,7 +37,7 @@
     overflow: auto;
 }
 
-.Filter-options li {
+.filter-options li {
     display: block;
     padding: 4% 12%;
     transition: .5s;
@@ -48,23 +48,23 @@
     border-left: 1px solid #fff;
 }
 
-.Filter-options li:hover {
+.filter-options li:hover {
     color: #00c8ff;
     background-color: black;
     text-decoration: none;
 }
 
-.Filter-text {
+.filter-text {
     font-size: 1rem;
     color: grey;
 }
 
-.MovieFilter {
+.movieFilter {
     width: 100%;
 }
 
 @media only screen and (max-width: 904px) {
-    .Filter{
+    .filter{
         width: 100%;
     }
 }

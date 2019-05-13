@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Movie from './Movie';
+import Movie from '../Movie';
 
 describe('<Movie/>', () => {
   let wrapper:any;

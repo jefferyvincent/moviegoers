@@ -1,4 +1,4 @@
-.App-Header {
+.app-header {
     display: flex;
     background-color: #222;
     color: #fff;
@@ -10,43 +10,43 @@
     box-sizing: border-box;
 }
 
-.Header-left {
+.header-left {
     width: 170px;
     text-align: left;
 }
 
-.Header-right {
+.header-right {
     width: calc(98% - 144px);
 }
 
-.Header-logo {
+.header-logo {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
-.Header-logo img {
+.header-logo img {
     position: relative;
     top: 10px;
 }
 
 @media only screen and (max-width: 904px) {
-    .App-Header {
+    .app-header {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .Header-right {
+    .header-right {
         width: 100%;
         text-align: center;
     }
 
-    .Header-left {
+    .header-left {
         width: 100%;
         text-align: center;
     }
 
-    .Header-logo img {
+    .header-logo img {
         top: 0px;
     }
 }

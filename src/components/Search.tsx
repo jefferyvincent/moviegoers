@@ -26,7 +26,7 @@ const Search: React.FC = () => {
         if (data !== undefined) {
             if (data.hasOwnProperty('results')) {
                 return (
-                    <ul className={"Search-results "+ hidden}>
+                    <ul className={"search-results "+ hidden}>
                         {data.results.map((item:any) => (
                             <li key={item.id}>
                                 <Link to={"/movie/"+item.id}>
@@ -64,9 +64,9 @@ const Search: React.FC = () => {
     }
 
     return (
-        <div className="App-search">
-            <input autoComplete="off" onChange={(evt)=>{ showResults(); setQuery(evt.target.value); } } autoCorrect="off" spellCheck={false} placeholder="search it. watch it"></input>
-            <img className="Search-mag" src={mag} alt="Search" />
+        <div className="app-search">
+            <input autoComplete="off" onChange={(evt)=>{ showResults(); setQuery(evt.target.value); } } autoCorrect="off" spellCheck={false} placeholder="search it."></input>
+            <img className="search-mag" src={mag} alt="Search" />
             {renderData()}
         </div>
     );

@@ -5,7 +5,7 @@ type Action =
 
 
 const appReducer = (state:any, action:Action) => {
-    console.log(action);
+    //console.log(action);
     switch (action.type) {
         case 'updateFilter': {
             return {

@@ -45,13 +45,13 @@ const MovieFilter: React.FC<MovieFilterProps> = ({ filters, active_filter, histo
     }
 
     return (
-        <div className="MovieFilter">
-            <h3 className="Filter-text">Showing Movies sorted by {active}</h3>
-            <div className="Filter">
-                <div className="Filter-selected" onClick={toggleFilterOptions}>
+        <div className="movieFilter">
+            <h3 className="filter-text">Showing Movies sorted by {active}</h3>
+            <div className="filter">
+                <div className="filter-selected" onClick={toggleFilterOptions}>
                     {active} <img src={arrow} alt="filter" />
                 </div>
-                <ul className={"Filter-options " + hidden}>
+                <ul className={"filter-options " + hidden}>
                     {
                         filters.map((item:any, key:number)=> {
                             if (active_filter !== item.name) {
