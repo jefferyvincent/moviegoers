@@ -20,7 +20,7 @@ describe('<MovieDetails/>', () => {
 
  test('loads and displays movie details', async () => {
    /*  
-      This test passes but throws useless warning about things needed to be wrapped in act(). 
+      This test passes but throws a warning about things needed to be wrapped in act(). 
       Not sure how to resolve this issue since it's complaining about node_modules/react-dom/cjs/react-dom.development.js
    */
    const mockData = {
