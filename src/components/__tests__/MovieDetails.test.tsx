@@ -1,27 +1,48 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {render } from 'react-testing-library';
+import {render, cleanup, waitForElement } from 'react-testing-library';
+import 'jest-dom/extend-expect'
 import {HashRouter as Router} from "react-router-dom";
+// import { act } from 'react-dom/test-utils';
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
+
 import MovieDetails from '../MovieDetails';
 
+afterEach(cleanup);
+
+
 describe('<MovieDetails/>', () => {
-  let wrapper:any;
-  beforeEach(() => { wrapper = shallow(<MovieDetails match={{ params: { id: " 302349"} } } history={[]} />); });
 
   it("renders", () => {
     const { asFragment } = render(<Router><MovieDetails match={{ params: { id: " 302349"} } } history={[]} /></Router>);
     expect(asFragment()).toMatchSnapshot();
   });
-  
-  
-  it('renders an loader', () => {
-    expect(wrapper.find('div.loading').length).toEqual(1);
-  });
 
-  /* 
-    Need to mock Ajax somehow here???? Nothing is is working and __mocks__ / axios.js is throwing me errors. 
-    Reference:
-    https://www.leighhalliday.com/mocking-axios-in-jest-testing-async-functions
-    https://www.leighhalliday.com/async-axios-react-testing-library
-  */
+ test('loads and displays movie details', async () => {
+   /*  
+      This test passes but throws useless warning about things needed to be wrapped in act(). 
+      Not sure how to resolve this issue since it's complaining about node_modules/react-dom/cjs/react-dom.development.js
+   */
+   const mockData = {
+      original_title: "test",
+      runtime: 0,
+      overview: 'testing 1234',
+      vote_count: 12,
+      vote_average: 5
+    };
+
+    const { getByTestId, getAllByText} = render(<Router><MovieDetails match={{ params: { id: " 302349"} } } history={[]} /></Router>);
+    expect(getByTestId('loader')).toHaveTextContent('loading...');
+
+    let mockAdapter = new MockAdapter(axios);
+    
+    mockAdapter.onGet('https://api.themoviedb.org/3/movie/299534?api_key=438581175542f3ba5208b33d46f87151').reply(200, {
+      data: {
+        posts: [mockData]
+      }
+    });
+    
+    const resolvedDiv = await waitForElement(() => getByTestId("resolved"));
+    expect(resolvedDiv).toHaveTextContent("Back");
+  });
 });

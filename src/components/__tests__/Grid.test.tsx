@@ -1,15 +1,24 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import {render, cleanup, waitForElement } from 'react-testing-library';
+import {render} from 'react-testing-library';
 import "jest-dom/extend-expect";
-import axios from "axios";
 
 import Grid from '../Grid';
-afterEach(cleanup);
+
+jest.mock("axios");
+
 
 describe('<Grid/>', () => {
   let wrapper:any;
-  let data = [{}];
+  let data = [{
+    results: [
+      {
+        id: 0,
+        img:'test.png',
+        title: "test"
+      }
+    ]
+    }];
      
   beforeEach(() => { wrapper = shallow(<Grid movies={data}/>); });
 
@@ -24,17 +33,6 @@ describe('<Grid/>', () => {
   
   it('renders an loader', () => {
     expect(wrapper.find('div.loader').length).toEqual(1);
-  });
-
-  /* 
-    Need to mock Ajax somehow here???? Nothing is is working and __mocks__ / axios.js is throwing me errors. 
-    Reference:
-    https://www.leighhalliday.com/mocking-axios-in-jest-testing-async-functions
-    https://www.leighhalliday.com/async-axios-react-testing-library
-  */
-
-  it('fetches and displays data', async () => {
-    const {} = render(<Grid movies={data} />);
   });
 
 });

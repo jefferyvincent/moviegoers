@@ -114,7 +114,7 @@ const MovieDetails:React.FC<MovieDetailsProps> = ({match, history}) => {
 
                 return (
                     <Fragment>
-                        <div className="backBtn" onClick ={goBack}>Back</div>
+                        <div data-testid="resolved" className="backBtn" onClick ={goBack}>Back</div>
                         <div className="movie-details">
                             <h2>{data.original_title}</h2>
                             <div className="movie-details-body">
@@ -132,10 +132,10 @@ const MovieDetails:React.FC<MovieDetailsProps> = ({match, history}) => {
                     </Fragment>
                 ) 
             } else {
-                return <div className="loading">loading...</div>
+                return <div data-testid="loader" className="loading">loading...</div>
             }
         } else {
-            return <div className="loading">loading...</div>
+            return <div data-testid="loader" className="loading">loading...</div>
         }
     }
 

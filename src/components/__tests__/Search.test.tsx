@@ -3,6 +3,8 @@ import { shallow } from 'enzyme';
 import {render } from 'react-testing-library';
 import Search from '../Search';
 
+
+
 describe('<Search/>', () => {
   let wrapper:any;
   beforeEach(() => { wrapper = shallow(<Search />); });
@@ -15,4 +17,5 @@ describe('<Search/>', () => {
   it('renders an input area', () => {
     expect(wrapper.find('input').length).toEqual(1);
   });
+
 });

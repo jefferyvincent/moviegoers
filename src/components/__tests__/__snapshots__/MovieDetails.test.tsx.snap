@@ -50,6 +50,7 @@ exports[`<MovieDetails/> renders 1`] = `
     >
       <div
         class="loading"
+        data-testid="loader"
       >
         loading...
       </div>
