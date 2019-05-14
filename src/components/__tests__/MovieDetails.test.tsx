@@ -31,7 +31,7 @@ describe('<MovieDetails/>', () => {
       vote_average: 5
     };
 
-    const { getByTestId, getAllByText} = render(<Router><MovieDetails match={{ params: { id: " 302349"} } } history={[]} /></Router>);
+    const { getByTestId} = render(<Router><MovieDetails match={{ params: { id: " 302349"} } } history={[]} /></Router>);
     expect(getByTestId('loader')).toHaveTextContent('loading...');
 
     let mockAdapter = new MockAdapter(axios);

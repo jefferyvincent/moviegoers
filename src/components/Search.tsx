@@ -8,7 +8,7 @@ import mag from '../img/mag.svg';
 const Search: React.FC = () => {
     const [data, setData] = useState();
     const [query, setQuery] = useState();
-    const [hidden, setHidden] = useState('hidden')
+    const [hidden, setHidden] = useState('hidden');
 
     useEffect(() => {
         if (query !== '') {

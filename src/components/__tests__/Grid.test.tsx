@@ -5,8 +5,6 @@ import "jest-dom/extend-expect";
 
 import Grid from '../Grid';
 
-jest.mock("axios");
-
 
 describe('<Grid/>', () => {
   let wrapper:any;
