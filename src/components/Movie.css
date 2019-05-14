@@ -8,6 +8,7 @@
 
 .movie-poster {
     max-width: 100%;
+    min-height: 400px;
 }
 
 .movie-text {
@@ -16,4 +17,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.75em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
